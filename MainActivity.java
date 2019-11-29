@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        et = findViewById(R.id.et);
+        et = findViewById(R.id.et);  // определяем поле ввода текста
     }
 
-    public void onClick(View view){
+    public void onClick(View view){ // по нажатию на кнопу считываем из EditText числа и переводим их в интеджер
         String temp = et.toString();
         String[] mas = temp.split(" ");
         mas1 = new int[mas.length];
